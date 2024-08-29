@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+        .parent{
+            position: relative;
+            display:block;
+            height: 50vh;
+            width: 50%;
+        }
+        img{
+            position: absolute;
+            top:50px;
+            left: 20%;
+        }
+
+         .child{
+            display: none;
+        }
+
+        .parent:hover  .child{
+            display: block;
+            transform: translatey(-50px);
+
+        }
+        .parent:hover .image-1{
+            display:none;
+        }
+        .price{
+            top: 50vh;
+            color: white;
+            background-color:gray;
+            font-size: 20px;
+            text-align: center;
+            padding: 1%;
+            border-radius: 20px;
+        }
+        .cart{
+            border-radius: 20px;
+            color: black;
+            position: relative;
+            top:30%;
+            left: 50%;
+            width: 10em;
+            font-size: 15px;
+        }
+        .main{
+            height: 100vh;
+        }
+        .cart:hover + .parent .child{
+            display: block;
+            
+        }
+        .cart:hover +.parent .image-1{
+            display: none;
+            
+        }
+        .cart:hover {
+            background-color: black;
+           color:white;
+        }
+        .product{
+            position: absolute;
+            top: 70%;
+            left: 30%;
+        }
+        .hr{
+            position: relative;
+            top: 50%;
+            background-color: red;
+        }
+        .head{
+            position: relative;
+            top: 0px;
+            left:250px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="head">cookies</h1>
+       
+         <div class="main d-flex justify-content-center  gap-1 align-items-center">
+            <button class="cart  mt-4 border  p-1 pe-3  ps-3  ">add to cart</button>
+            <div class="parent">
+               <h4 class="product">cookies</h4>
+               <h1 class="price mt-3 position-absolute">1.55$</h1>
+               <img class="image-1" src="./Img_1-Biscotto-al-Cioccolato - Copy.png " width="200" alt="">
+               <div class="child">
+                     <img src="./Img_Il-Biscotto-al-Limone_(600x600).png" width="200" alt="">
+               </div>  
+            </div>
+         
+            <button class="cart mt-4 border  p-1 pe-3  ps-3  ">add to cart</button>
+            <div class="parent">
+               <h4 class="product">cookies</h4>
+               <h1 class="price  mt-3 position-absolute">1.55$</h1>
+               <img class="image-1" src="./Img_1-Biscotto-al-Cioccolato - Copy.png " width="200" alt="">
+               <div class="child ">
+                     <img src="./Img_Il-Biscotto-Arancia-e-Nocciola_(600x600).png" width="200" alt="">
+               </div>
+            </div>
+         
+            <button class="cart  mt-4 border  p-1 pe-3  ps-3  ">add to cart</button>
+            <div class="parent">
+               <h4 class="product">cookies</h4>
+               <h1 class="price mt-3 position-absolute">1.55$</h1>
+               <img class="image-1" src="./Img_1-Biscotto-al-Cioccolato - Copy.png" width="200" alt="">
+                  <div class="child">
+                        <img src="./Img_Il-Biscotto-Gocciolato_(600x600).png" width="200" alt="">
+                  </div>
+            </div>
+            <button class="cart  mt-4 border  p-1 pe-3  ps-3  ">add to cart</button>
+            <div class="parent">
+               <h4 class="product">cookies</h4>
+               <h1 class="price mt-3 position-absolute">1.55$</h1>
+               <img class="image-1" src="./Img_1-Biscotto-al-Cioccolato - Copy.png" width="200" alt="">
+               <div class="child">
+              <img src="./Img_Il-Biscotto-Frollino_(600x600) - Copy.png" width="200" alt="">
+              </div>
+            </div>  
+         </div>
+     </div>
+</body>
+</html>
